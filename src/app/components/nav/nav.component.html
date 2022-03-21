@@ -1,0 +1,8 @@
+<nav class="b-header">
+    <ul class="navigator">
+        <img class="b-logo" src="../../../assets/LOGO/logo.png" alt="Logo Netflix">
+        <li class="navigator__item" *ngFor="let element of navigatorLinks">
+          <a href="{{ element.link }}">{{ element.name }}</a>
+        </li>
+      </ul>
+</nav>

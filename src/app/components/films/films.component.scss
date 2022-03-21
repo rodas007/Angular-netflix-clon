@@ -1,0 +1,28 @@
+.Gallery__item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+
+    & img{
+        width: 300px;
+height: 180px;
+border: 2px solid black;
+&:hover {
+    transform: scale(1.1);
+    transition: .6s;
+    box-shadow: -2px -2px 12px #918e8e;
+    }
+  }
+ 
+
+
+  h3{
+    margin: 10px;
+    font-size: 22px;
+    color: #929597
+  }
+  
+    p{ display:none;}
+}

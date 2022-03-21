@@ -1,0 +1,14 @@
+
+<figure class="gallery" *ngFor="let element of terrorFilms ">
+    <h3>{{ element.section }}</h3>
+<article class="Gallery__item">
+    
+<div *ngFor="let film of element.films">
+<img src="{{film.photo}}" alt="">
+<p>{{film.name}}</p>
+</div>
+</article> 
+</figure>
+    
+ 
+
