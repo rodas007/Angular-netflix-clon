@@ -32,7 +32,6 @@ export class AppComponent {
   ];
 
   
-
     
      terrorFilms= [{
         section: "Terror",
