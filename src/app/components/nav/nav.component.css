@@ -1,0 +1,46 @@
+.navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 50px;
+  padding: 10px;
+  height: 20px;
+}
+
+.navigator__item a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.navigator__item a:hover {
+  color: red;
+}
+
+.b-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 100%;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.b-logo {
+  margin: 50px;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.component.css.map */

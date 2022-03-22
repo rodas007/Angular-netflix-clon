@@ -8,7 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
   
  @Input() navigatorLinks!: any;
-
+ @Input() navBar!: any;
+ @Input() changeDark!: any;
+ @Input() theme!: string;
 
 
 

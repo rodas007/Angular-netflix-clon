@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'netflix-app';
 
+  public isDark: boolean = false;
+
+  public theme: string = "🌙";
+
   navigatorLinks = [
     {
       name: 'Inicio',
@@ -30,6 +34,35 @@ export class AppComponent {
       link: '#Mi lista',
     },
   ];
+
+  public topGallery = {
+    title: "Los 5 más populares hoy",
+    gallery: [{
+      position: 1,
+      image: "../../../assets/Top10/1-papel.webp",
+      name: "La Casa de Papel"
+    },
+    {
+      position: 2,
+      image: "../../../assets/Top10/2-reina.webp",
+      name: "La Reina del Flow"
+    },
+    {
+      position: 3,
+      image: "../../../assets/Top10/3-titanes.webp",
+      name: "Titans"
+    },
+    {
+      position: 4,
+      image: "../../../assets/Top10/4-lostinspace.webp",
+      name: "Lost in Space"
+    },
+    {
+      position: 5,
+      image: "../../../assets/Top10/5-dondecaben.webp",
+      name: "Donde Caben"
+    }]
+  }
 
   
     
@@ -210,7 +243,7 @@ scifiFilms= [{
     },
     {
       name: "core",
-      photo: "../../../assets/Sci-fi/core"
+      photo: "../../../assets/Sci-fi/core.webp"
     },
     {
       name: "deepimpact",
@@ -275,6 +308,19 @@ topFilms= [{
   ]
 }
 ] 
+public changeDark = () => {
+  if (this.isDark == false) {
+    this.isDark = true;
+    this.theme = "☀️"
+  }
+  else if (this.isDark == true) {
+    this.isDark = false;
+    this.theme = "🌙"
+  }
+}
+
+
+
 
 }
 
